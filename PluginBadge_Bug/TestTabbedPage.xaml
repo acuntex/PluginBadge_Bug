@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:abstractions="clr-namespace:Plugin.Badge.Abstractions;assembly=Plugin.Badge.Abstractions"
+             x:Class="PluginBadge_Bug.TestTabbedPage">
+    <TabbedPage.Children>
+        <ContentPage Title="Tab 1" 
+                     Icon="icon.png"
+                     abstractions:TabBadge.BadgeText="10">
+            <StackLayout>
+                <Label Text="Tab 1"></Label>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Tab 2" 
+                     Icon="icon.png"
+                     abstractions:TabBadge.BadgeText="20">
+            <StackLayout>
+                <Label Text="Tab 2"></Label>
+            </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
